@@ -8,14 +8,39 @@ const GlowContainer = () => {
             //     background: background,
             // }}
         >
-            <div className="relative z-30 blur-xl opacity-30 bottom-[20em]">
+            <div className="relative z-30 blur-3xl opacity-80 bottom-[20em]">
                 <svg
-                    // width={"200px"}
-                    // height={"200px"}
+                    width={"80em"}
+                    height={"80em"}
                     viewBox="0 0 200 200"
                     xmlns="http://www.w3.org/2000/svg"
                 >
-                    <path fill="#666362" transform="translate(100 100)">
+                    {/* <defs>
+                        <radialGradient id="fill" cx="46%" cy="50%">
+                            <stop offset="0%" stop-color="#eb8f15"></stop>
+                            <stop offset="100%" stop-color="#c57aff"></stop>
+                        </radialGradient>
+                    </defs> */}
+                    <defs>
+                        <radialGradient id="fill" cx="46%" cy="50%">
+                            <stop offset="0%" stop-color="#ff9900"></stop>
+                            <stop offset="100%" stop-color="#dd56e9"></stop>
+                        </radialGradient>
+                    </defs>
+                    {/* <defs>
+                        <linearGradient
+                            id="fill"
+                            x1="0%"
+                            y1="0%"
+                            x2="100%"
+                            y2="0%"
+                            gradientTransform="rotate(45 0.5 0.5)"
+                        >
+                            <stop offset="0%" stop-color="#ff9900"></stop>
+                            <stop offset="100%" stop-color="#dd56e9"></stop>
+                        </linearGradient>
+                    </defs> */}
+                    <path fill="url(#fill)" transform="translate(140 100)">
                         <animate
                             attributeName="d"
                             dur={"8000ms"}
