@@ -3,7 +3,7 @@ import { paragraph, paragraphTwo, paragraphThree } from "@/info/background";
 const Body = () => {
     return (
         <div className="flex flex-col h-full justify-center gap-10 z-30">
-            <div className="flex flex-col text-7xl font-black antialiased text-black tracking-tighter">
+            <div className="flex flex-col text-7xl font-bold antialiased text-white tracking-tighter">
                 <div className="">LINAS ALEKNEVICIUS</div>
                 <div>FULLSTACK</div>
                 <div className="h-full pl-[4em]">
@@ -19,16 +19,25 @@ const Body = () => {
                 </div> */}
             </div>
             <div>
-                <div className="flex flex-col gap-3 text-black text-justify items-start  tracking-tighter text-5xl antialiased">
-                    <div className="w-[100%] flex items-start flex-col pb-4 pr-4 gap-4 pr-6">
-                        <div className="text-[0.6rem] tracking-normal">
-                            <div className="max-w-[47em]"> {paragraph}</div>
+                <div className="flex flex-col gap-3 text-white items-start text-justify  tracking-tighter text-5xl antialiased">
+                    <div className="w-[100%] flex items-start flex-row pb-4 pr-4 gap-4 pr-6">
+                        <div className="flex flex-row ">
+                            <div className="text-[0.6rem] tracking-normal">
+                                <div className="max-w-[15em]">
+                                    <strong className="pr-8 font-black">
+                                        TORONTO
+                                    </strong>
+
+                                    {paragraph}
+                                </div>
+                            </div>
                         </div>
-                        <div className=" text-[0.6rem] tracking-normal text-justify">
-                            <div className="max-w-[47em]">{paragraphTwo}</div>
+
+                        <div className=" text-[0.6rem] tracking-normal ">
+                            <div className="max-w-[15em]">{paragraphTwo}</div>
                         </div>
-                        <div className="text-[0.6rem] tracking-normal text-justify">
-                            <div className="max-w-[47em]">{paragraphThree}</div>
+                        <div className="text-[0.6rem] tracking-normal ">
+                            <div className="max-w-[15em]">{paragraphThree}</div>
                         </div>
                     </div>
                 </div>

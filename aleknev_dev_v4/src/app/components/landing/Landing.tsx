@@ -5,7 +5,7 @@ import Header from "./Header";
 const Landing = () => {
     return (
         <div className="h-screen flex flex-row">
-            <div className="w-[2%] bg-red-100">lol</div>
+            <div className="w-[2%w]">lol</div>
             <div className="flex-col flex w-11/12">
                 <Header />
                 <Body />
