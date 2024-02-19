@@ -8,10 +8,10 @@ const GlowContainer = () => {
             //     background: background,
             // }}
         >
-            <div className="relative z-30 blur-3xl opacity-80 bottom-[20em]">
+            <div className="relative z-30 blur-3xl opacity-70 bottom-[20em]">
                 <svg
-                    width={"80em"}
-                    height={"80em"}
+                    width={"100em"}
+                    height={"100em"}
                     viewBox="0 0 200 200"
                     xmlns="http://www.w3.org/2000/svg"
                 >
@@ -27,6 +27,7 @@ const GlowContainer = () => {
                             <stop offset="100%" stop-color="#dd56e9"></stop>
                         </radialGradient>
                     </defs>
+
                     {/* <defs>
                         <linearGradient
                             id="fill"
