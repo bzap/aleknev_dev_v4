@@ -11,7 +11,7 @@ export default function Home() {
             >
                 <div className="w-full h-full px-8">
                     <Landing />
-                    <Landing />
+                    {/* <Landing /> */}
                     <GlowContainer />
                     {/* <Navbar />
                     

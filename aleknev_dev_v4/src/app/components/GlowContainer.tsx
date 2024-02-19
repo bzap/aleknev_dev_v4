@@ -1,54 +1,34 @@
+import { useState, useEffect } from "react";
+
 const GlowContainer = () => {
     return (
         <div
-            id="grad-container"
-            className="inset-0 pointer-events-none transition duration-300 fixed transition w-full"
+            className="inset-0 fixed h-screen pointer-events-none transition duration-300 transition w-full"
             // style={{
             //     background: background,
             // }}
         >
-            <div
-                id="grad-container"
-                className="inset-0 pointer-events-none transition duration-300 fixed transition w-full"
-                // style={{
-                //     background: background,
-                // }}
-            >
-                <div className="gradient-bg ">
-                    <svg xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <filter id="goo">
-                                <feGaussianBlur
-                                    in="SourceGraphic"
-                                    stdDeviation="10"
-                                    result="blur"
-                                />
-                                <feColorMatrix
-                                    in="blur"
-                                    mode="matrix"
-                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                                    result="goo"
-                                />
-                                <feTurbulence
-                                    type="fractalNoise"
-                                    baseFrequency="0.95"
-                                    numOctaves="3"
-                                    stitchTiles="stitch"
-                                />
-
-                                <feBlend in="SourceGraphic" in2="goo" />
-                            </filter>
-                        </defs>
-                    </svg>
-                    <div className="gradients-container opacity-30">
-                        <div className="g1"></div>
-                        <div className="g2"></div>
-                        <div className="g3"></div>
-                        <div className="g4"></div>
-                        <div className="g5"></div>
-                        <div className="interactive"></div>
-                    </div>
-                </div>
+            <div className="relative z-30 blur-xl opacity-30 bottom-[20em]">
+                <svg
+                    // width={"200px"}
+                    // height={"200px"}
+                    viewBox="0 0 200 200"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path fill="#666362" transform="translate(100 100)">
+                        <animate
+                            attributeName="d"
+                            dur={"8000ms"}
+                            repeatCount={"indefinite"}
+                            values={`M46.3,-75.1C59.6,-72.6,69.7,-59.3,67.6,-45C65.5,-30.7,51.2,-15.4,49.1,-1.2C47.1,13,57.3,26,56,34.4C54.7,42.8,41.9,46.6,30.6,48.7C19.4,50.8,9.7,51.1,2.1,47.5C-5.5,43.9,-11,36.3,-23.8,35.1C-36.5,33.8,-56.4,38.9,-58.3,34.2C-60.3,29.4,-44.2,14.7,-39.3,2.9C-34.3,-8.9,-40.4,-17.9,-38.4,-22.6C-36.4,-27.3,-26.3,-27.7,-18.6,-33.4C-10.8,-39.1,-5.4,-50.2,5.6,-59.8C16.5,-69.4,33,-77.6,46.3,-75.1Z;
+                                M16.7,-38.5C21.9,-26.1,26.3,-21.9,37.3,-16.8C48.4,-11.8,66.1,-5.9,67.7,0.9C69.2,7.7,54.5,15.3,43.7,20.8C32.8,26.2,25.8,29.4,19.2,32.3C12.5,35.2,6.3,37.8,-1.5,40.4C-9.3,43,-18.5,45.6,-30.8,45.9C-43.1,46.3,-58.4,44.4,-59.8,36.4C-61.2,28.4,-48.6,14.2,-40.5,4.7C-32.3,-4.8,-28.5,-9.5,-26.5,-16.4C-24.4,-23.2,-24.1,-32.1,-19.9,-45.2C-15.8,-58.2,-7.9,-75.2,-1,-73.4C5.8,-71.6,11.6,-50.9,16.7,-38.5Z;
+                                M22.5,-39.5C26,-37,23.4,-24.5,30.6,-16.2C37.9,-8,55.1,-4,55.9,0.5C56.8,5,41.3,9.9,36.2,21.9C31,33.8,36.2,52.8,31.9,55.3C27.6,57.7,13.8,43.7,0.3,43.1C-13.1,42.6,-26.3,55.4,-31.1,53.2C-35.9,51,-32.3,33.8,-28,22.4C-23.6,11.1,-18.5,5.5,-21.8,-1.9C-25.1,-9.3,-36.8,-18.7,-37.3,-23.3C-37.7,-27.9,-26.8,-27.8,-18.7,-27.6C-10.6,-27.5,-5.3,-27.3,2.1,-31C9.5,-34.6,19.1,-42.1,22.5,-39.5Z;
+                                    M14.4,-28.1C19.2,-22.1,24.3,-19.5,37.2,-15.4C50.2,-11.3,71,-5.6,75.6,2.6C80.2,10.9,68.4,21.8,56.5,27.7C44.5,33.5,32.4,34.3,22.9,40.5C13.5,46.7,6.7,58.3,-2.6,62.8C-11.9,67.3,-23.9,64.7,-27.3,55C-30.8,45.4,-25.7,28.7,-27.4,18.3C-29,8,-37.3,4,-39.9,-1.5C-42.5,-7,-39.3,-13.9,-34.7,-19.2C-30.2,-24.4,-24.2,-27.9,-18.1,-33.3C-12.1,-38.8,-6.1,-46.1,-0.7,-44.9C4.7,-43.8,9.5,-34.2,14.4,-28.1Z;
+                                    M46.3,-75.1C59.6,-72.6,69.7,-59.3,67.6,-45C65.5,-30.7,51.2,-15.4,49.1,-1.2C47.1,13,57.3,26,56,34.4C54.7,42.8,41.9,46.6,30.6,48.7C19.4,50.8,9.7,51.1,2.1,47.5C-5.5,43.9,-11,36.3,-23.8,35.1C-36.5,33.8,-56.4,38.9,-58.3,34.2C-60.3,29.4,-44.2,14.7,-39.3,2.9C-34.3,-8.9,-40.4,-17.9,-38.4,-22.6C-36.4,-27.3,-26.3,-27.7,-18.6,-33.4C-10.8,-39.1,-5.4,-50.2,5.6,-59.8C16.5,-69.4,33,-77.6,46.3,-75.1Z;
+                                    `}
+                        />
+                    </path>
+                </svg>
             </div>
         </div>
     );
