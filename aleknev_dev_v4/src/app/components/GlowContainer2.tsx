@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
-const GlowContainer = () => {
+const GlowContainer2 = () => {
     return (
         <div
-            className="h-full w-full fixed top-0 left-0 pointer-events-none transition duration-300 transition w-full"
+            className="h-full w-full fixed right-0 bottom-0 pointer-events-none transition duration-300 transition w-full"
             // style={{
             //     background: background,
             // }}
@@ -53,7 +53,7 @@ const GlowContainer = () => {
                             <stop offset="100%" stop-color="#dd56e9"></stop>
                         </linearGradient>
                     </defs> */}
-                    <path fill="url(#fill)" transform="translate(20, 80)">
+                    <path fill="url(#fill)">
                         <animate
                             attributeName="d"
                             dur={"8000ms"}
@@ -72,4 +72,4 @@ const GlowContainer = () => {
     );
 };
 
-export default GlowContainer;
+export default GlowContainer2;

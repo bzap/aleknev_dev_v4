@@ -20,6 +20,24 @@ body {
     }
 }
 
+@layer base {
+    .body-text {
+        @apply text-[0.45rem] text-white font-condensed opacity-90 tracking-wider antialiased;
+    }
+}
+
+@layer base {
+    .title-text {
+        @apply text-8xl font-semibold antialiased text-white opacity-90 tracking-tight leading-[4.8rem];
+    }
+}
+
+@layer utilities {
+    .font-condensed {
+        font-stretch: condensed;
+    }
+}
+
 /* inspired by https://github.com/baunov/gradients-bg */
 :root {
     --color1: 18, 113, 255;
