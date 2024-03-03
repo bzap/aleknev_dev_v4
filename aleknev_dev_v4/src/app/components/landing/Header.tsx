@@ -1,14 +1,12 @@
 // import { paragraph, paragraphTwo, paragraphThree } from "@/info/background";
-import { GithubLogo } from "@phosphor-icons/react/dist/ssr/GithubLogo";
-import { LinkedinLogo } from "@phosphor-icons/react/dist/ssr/LinkedinLogo";
-import { InstagramLogo } from "@phosphor-icons/react/dist/ssr/InstagramLogo";
+
 import Image from "next/image";
 
 const Header = () => {
     return (
-        <div className="flex w-full justify-between items-center pt-20 border-b-[1px] pb-4 border-b-stone-800">
+        <div className="flex w-full justify-between items-center pt-12 border-b-[1px] pb-3 border-b-stone-800">
             <div className="flex flex-row items-center justify-center">
-                <div className="relative h-10 w-10 rounded-full mr-4 pt-0.5">
+                <div className="relative h-10 w-10 rounded-full mr-4 pt-0.5 base:hidden md:block">
                     <Image
                         src={"/portrait.jpeg"}
                         alt={"/"}
@@ -29,18 +27,6 @@ const Header = () => {
                     <div className="font-medium text-sm text-stone-500">
                         Software Engineer
                     </div>
-                </div>
-            </div>
-
-            <div className="flex flex-row text-white gap-3">
-                <div className=" justify-center items-center">
-                    <GithubLogo fill="#78716c" size={24} />
-                </div>
-                <div className="justify-center items-center">
-                    <LinkedinLogo fill="#78716c" size={24} />
-                </div>
-                <div className="justify-center items-center">
-                    <InstagramLogo fill="#78716c" size={24} />
                 </div>
             </div>
 
