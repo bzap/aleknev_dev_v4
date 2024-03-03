@@ -1,4 +1,10 @@
-export const projects = [
+type ProjectsType = {
+    name: string;
+    desc: string;
+    link: string;
+}[];
+
+export const projects: ProjectsType = [
     {
         name: "Mrkdwn",
         desc: "Minimalistic markdown editor website that conforms to GFM standards.",

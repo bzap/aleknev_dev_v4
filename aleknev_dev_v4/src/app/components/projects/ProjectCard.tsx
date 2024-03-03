@@ -1,12 +1,12 @@
 import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr/ArrowUpRight";
 
-type Project = {
+type ProjectProp = {
     name: string;
     desc: string;
     link: string;
 };
 
-const ProjectCard = ({ name, desc, link }: Project) => {
+const ProjectCard = ({ name, desc, link }: ProjectProp) => {
     return (
         <div className="group cursor-pointer justify-center items-center -mx-4">
             <a href={link} target="_blank">
