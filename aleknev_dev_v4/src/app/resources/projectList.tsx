@@ -25,9 +25,4 @@ export const projects = [
         desc: "Three dimensional terrain generator, complete with panning and rendering options.",
         link: "https://github.com/bzap/terrain_gen",
     },
-    {
-        name: "Goni-Go",
-        desc: "Mobile goniometry application made for cancer survivors with post-treatment help.",
-        link: "https://drive.google.com/file/d/1-iy6nloK2FZAIC4Aj1fYx0I8Z8pYleNR/view?usp=sharing",
-    },
 ];
