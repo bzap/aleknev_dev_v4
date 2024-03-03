@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className="flex flex-col border-t-[1px] pt-4 mt-4 pb-12 border-t-zinc-800">
             <div className="flex flex-row justify-between">
-                <div className="flex flex-row gap-6">
+                <div className="flex flex-row base:gap-2 md:gap-6">
                     {socials.map((item, index) => {
                         return (
                             <a
@@ -17,7 +17,9 @@ const Footer = () => {
                             >
                                 <div className={`${footerItemStyle}`}>
                                     {item.icon}
-                                    {item.name}
+                                    <div className="base:hidden md:block">
+                                        {item.name}
+                                    </div>
                                 </div>
                             </a>
                         );
@@ -26,7 +28,9 @@ const Footer = () => {
                 <a href={contact.link}>
                     <div className={`${footerItemStyle}`}>
                         {contact.icon}
-                        {contact.name}
+                        <div className="base:hidden md:block">
+                            {contact.name}
+                        </div>
                     </div>
                 </a>
             </div>

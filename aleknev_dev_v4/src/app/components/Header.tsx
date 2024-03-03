@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <div className="flex w-full items-center border-b-zinc-800 border-b-[1px] pb-3">
             <div className="flex flex-row items-center justify-center">
-                <div className="relative h-10 w-10 rounded-full mr-4">
+                <div className="relative h-10 w-10 rounded-full mr-4 active:scale-95 cursor-pointer">
                     <Image
                         src={"/memoji.webp"}
                         alt={"/"}
