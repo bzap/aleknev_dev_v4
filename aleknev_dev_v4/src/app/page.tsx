@@ -1,10 +1,7 @@
 import Image from "next/image";
-import Landing from "./components/landing/Landing";
-import GlowContainer from "./components/GlowContainer";
-import GlowContainer2 from "./components/GlowContainer2";
-import Header from "./components/landing/Header";
-import Footer from "./components/landing/Footer";
-import Body from "./components/landing/Body";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Body from "./components/About";
 import Projects from "./components/projects/Projects";
 
 export default function Home() {
@@ -18,6 +15,7 @@ export default function Home() {
                     <Body />
                     <Projects />
                     <Footer />
+
                     {/* <Landing /> */}
                     {/* {/* <GlowContainer /> */}
                     {/* <GlowContainer2 /> */}

@@ -11,16 +11,6 @@ const config: Config = {
             screens: {
                 base: "0px",
             },
-            colors: {
-                mblack: "#141412",
-                brwhite: "#b0b0b0",
-                cbrown: "#817675",
-            },
-            backgroundImage: {
-                "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-                "gradient-conic":
-                    "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-            },
         },
     },
     plugins: [],
