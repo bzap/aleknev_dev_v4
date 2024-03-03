@@ -10,9 +10,6 @@ const config: Config = {
         extend: {
             screens: {
                 base: "0px",
-                "3xl": "1920px",
-                "4xl": "2560px",
-                "5xl": "3840px",
             },
             colors: {
                 mblack: "#141412",

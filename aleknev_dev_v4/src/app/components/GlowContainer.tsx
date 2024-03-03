@@ -53,7 +53,7 @@ const GlowContainer = () => {
                             <stop offset="100%" stop-color="#dd56e9"></stop>
                         </linearGradient>
                     </defs> */}
-                    <path fill="url(#fill)" transform="translate(20, 80)">
+                    <path fill="url(#fill)" transform="tranzinc(20, 80)">
                         <animate
                             attributeName="d"
                             dur={"8000ms"}

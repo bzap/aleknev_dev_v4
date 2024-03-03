@@ -3,30 +3,31 @@ import { LinkedinLogo } from "@phosphor-icons/react/dist/ssr/LinkedinLogo";
 import { InstagramLogo } from "@phosphor-icons/react/dist/ssr/InstagramLogo";
 
 const Footer = () => {
-    const footerItems: string[] = ["LINKEDIN", "INSTAGRAM", "GITHUB"];
+    const footerItemStyle =
+        "justify-center items-center flex flex-row text-zinc-500 text-sm";
 
     return (
-        <div className="flex flex-col border-t-2 pt-4 border-t-stone-900">
-            <div className="flex flex-row justify-between  text-stone-500 text-sm">
+        <div className="flex flex-col border-t-2 pt-4 pb-12 border-t-zinc-900">
+            <div className="flex flex-row justify-between text-zinc-500 text-sm">
                 <div className="flex flex-row text-white gap-6">
-                    <div className="justify-center items-center flex flex-row  text-stone-500 text-sm">
+                    <div className={`${footerItemStyle}`}>
                         <LinkedinLogo
-                            fill="#78716c"
+                            fill="#a8a29e"
                             size={16}
                             className="mr-1"
                         />
                         Linkedin
                     </div>
-                    <div className="justify-center items-center flex flex-row  text-stone-500 text-sm">
+                    <div className={`${footerItemStyle}`}>
                         <InstagramLogo
-                            fill="#78716c"
+                            fill="#a8a29e"
                             size={16}
                             className="mr-1"
                         />
                         Instagram
                     </div>
-                    <div className="justify-center items-center flex flex-row  text-stone-500 text-sm">
-                        <GithubLogo fill="#78716c" size={16} className="mr-1" />
+                    <div className={`${footerItemStyle}`}>
+                        <GithubLogo fill="#a8a29e" size={16} className="mr-1" />
                         Github
                     </div>
                 </div>

@@ -4,7 +4,7 @@ import { projects } from "@/app/resources/projectList";
 const Projects = () => {
     return (
         <div className="w-full ">
-            <div className="text-stone-300 font-bold border-b-[1px] pb-2 border-b-stone-800">
+            <div className="text-zinc-300 text-md font-bold border-b-[1px] pb-2 border-b-zinc-800">
                 Projects
             </div>
             <div className="text-white pt-4 flex justify-center w-full flex-col">

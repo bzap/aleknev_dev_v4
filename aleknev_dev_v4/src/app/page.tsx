@@ -11,8 +11,7 @@ export default function Home() {
     return (
         <main className="flex min-h-screen flex-col min-w-screen items-center justify-between ">
             <div id={"grad"} className="flex w-full justify-center h-full ">
-                <div className="w-full h-screen px-8 max-w-2xl gap-8 flex flex-col">
-                    {/* <Header /> */}
+                <div className="w-full h-screen px-8 py-12 max-w-2xl gap-8 flex flex-col">
                     <Header />
                     {/* <Footer /> */}
                     {/* <Landing /> */}
@@ -20,8 +19,8 @@ export default function Home() {
                     <Projects />
                     <Footer />
                     {/* <Landing /> */}
-                    {/* <GlowContainer />
-                    <GlowContainer2 /> */}
+                    {/* {/* <GlowContainer /> */}
+                    {/* <GlowContainer2 /> */}
                     {/* <Navbar />
                     
             <Hero />
