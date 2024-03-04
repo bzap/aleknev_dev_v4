@@ -1,9 +1,9 @@
 const About = () => {
     return (
-        <div className="flex flex-col w-full z-30">
+        <div className="animate-slidein [--slidein-delay:150ms] opacity-0 flex flex-col w-full z-30">
             <div className="flex flex-col gap-4 text-sm text-zinc-400">
                 <div className="inline-block">
-                    Just a hardworking writer of code based in
+                    Just a hardworking code writer based in
                     <span className="text-zinc-300"> Toronto</span>. I&apos;m
                     currently working for
                     <span className="text-zinc-300"> AviaPro Consulting</span>
