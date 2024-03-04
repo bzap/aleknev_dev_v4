@@ -7,7 +7,7 @@ const About = () => {
                     <span className="text-zinc-300"> Toronto</span>. I&apos;m
                     currently working for
                     <a
-                        className="pl-1 text-zinc-300 hover:underline"
+                        className="pl-1 text-zinc-300 hover:text-zinc-100 transition-all"
                         href="https://aviaproconsulting.ca/"
                         target="_blank"
                     >
