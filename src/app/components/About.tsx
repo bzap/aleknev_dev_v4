@@ -6,7 +6,13 @@ const About = () => {
                     Just a hardworking code writer based in
                     <span className="text-zinc-300"> Toronto</span>. I&apos;m
                     currently working for
-                    <span className="text-zinc-300"> AviaPro Consulting</span>
+                    <a
+                        className="pl-1 text-zinc-300 hover:underline"
+                        href="https://aviaproconsulting.ca/"
+                        target="_blank"
+                    >
+                        AviaPro Consulting
+                    </a>
                     !
                     <br />
                     <br />
