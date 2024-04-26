@@ -32,7 +32,7 @@ export const socials: SocialType = [
     {
         name: "Linkedin",
         icon: <LinkedinLogo size={15} className={`${iconClass}`} />,
-        link: "https://instagram.com/l.aleknev",
+        link: "https://www.linkedin.com/in/linasalekne/",
     },
 ];
 
