@@ -15,7 +15,7 @@ const ProjectCard = ({ name, desc, link }: ProjectProp) => {
                         <div className="font-bold">{name}</div>
                         <div className="text-zinc-400">{desc}</div>
                     </div>
-                    <div className="group-hover:rotate-45 transition pl-2">
+                    <div className="md:group-hover:rotate-45 transition pl-2">
                         <ArrowUpRight size={20} fill="#a1a1aa" />
                     </div>
                 </div>
