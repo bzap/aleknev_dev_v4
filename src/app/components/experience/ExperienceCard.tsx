@@ -20,7 +20,7 @@ const ExperienceCard = ({
                     <div className="flex flex-col">
                         <div className="font-bold">{workplace}</div>
                         <div className="text-zinc-400">{title}</div>
-                        <div className="text-zinc-500">{duration}</div>
+                        <div className="text-zinc-500 text-xs">{duration}</div>
                     </div>
                     <div className="md:group-hover:rotate-45 transition pl-2">
                         <ArrowUpRight size={20} fill="#a1a1aa" />

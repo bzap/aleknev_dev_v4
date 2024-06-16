@@ -4,7 +4,7 @@ import ExperienceCard from "./ExperienceCard";
 const Experience = () => {
     return (
         <div className="animate-slidein [--slidein-delay:300ms] opacity-0 w-full">
-            <div className="text-zinc-200 text-md font-bold pb-2 border-b-zinc-800 border-b-[2px] pt-4">
+            <div className="text-zinc-200 text-md font-bold pb-2 border-b-zinc-800 border-b-[1px] pt-4">
                 Recent Experiences
             </div>
             <div className="text-white pt-2 flex justify-center w-full flex-col">
