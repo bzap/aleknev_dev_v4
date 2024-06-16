@@ -19,7 +19,7 @@ const About = () => {
                     When I&apos;m not developing, I might be managing my
                     <a
                         className="px-1 text-zinc-300 hover:text-zinc-100 transition-all"
-                        href="https://basketball.fantasysports.yahoo.com/"
+                        href="https://i.imgur.com/JM6ZTAb.jpeg"
                         target="_blank"
                     >
                         fantasy basketball
@@ -35,7 +35,7 @@ const About = () => {
                     or furthering my quest for the
                     <a
                         className="pl-1 text-zinc-300 hover:text-zinc-100 transition-all"
-                        href="https://i.redd.it/198hy5hxq1a71.jpg"
+                        href="https://i.imgur.com/FRyzXU5.jpeg"
                         target="_blank"
                     >
                         endgame keyboard
