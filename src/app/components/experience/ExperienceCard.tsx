@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr/ArrowUpRight";
+import Arrow from "../elements/Arrow";
 
 type ExperienceProp = {
     workplace: string;
@@ -26,9 +26,7 @@ const ExperienceCard = ({
                             {duration}
                         </div>
                     </div>
-                    <div className="md:group-hover:rotate-45 transition pl-2">
-                        <ArrowUpRight size={20} fill="#71717a" />
-                    </div>
+                    <Arrow />
                 </div>
             </a>
         </div>

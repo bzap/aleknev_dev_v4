@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr/ArrowUpRight";
+import Arrow from "../elements/Arrow";
 
 type ProjectProp = {
     name: string;
@@ -15,9 +15,7 @@ const ProjectCard = ({ name, desc, link }: ProjectProp) => {
                         <div className="font-bold">{name}</div>
                         <div className="text-zinc-400">{desc}</div>
                     </div>
-                    <div className="md:group-hover:rotate-45 transition pl-2">
-                        <ArrowUpRight size={20} fill="#71717a" />
-                    </div>
+                    <Arrow />
                 </div>
             </a>
         </div>
