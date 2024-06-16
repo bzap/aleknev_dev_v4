@@ -27,24 +27,14 @@ export const socials: SocialType = [
     {
         name: "Instagram",
         icon: (
-            <InstagramLogo
-                size={14}
-                className={`${iconClass}`}
-                weight="bold"
-                fill="#71717a"
-            />
+            <InstagramLogo size={14} className={`${iconClass}`} weight="bold" />
         ),
         link: "https://instagram.com/l.aleknev",
     },
     {
         name: "Linkedin",
         icon: (
-            <LinkedinLogo
-                size={14}
-                className={`${iconClass}`}
-                weight="bold"
-                fill="blue"
-            />
+            <LinkedinLogo size={14} className={`${iconClass}`} weight="bold" />
         ),
         link: "https://www.linkedin.com/in/linasalekne/",
     },
