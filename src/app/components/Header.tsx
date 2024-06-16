@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { MapPin } from "@phosphor-icons/react/dist/ssr/MapPin";
 
 const Header = () => {
     return (
-        <div className="animate-slidein [--slidein-delay:0ms] opacity-0 flex w-full items-center border-b-zinc-800 border-b-[1px] pb-3">
+        <div className="animate-slidein [--slidein-delay:0ms] opacity-0 flex w-full items-center border-b-zinc-800 border-b-[2px] pb-3">
             <div className="flex flex-row items-center justify-center">
-                <div className="relative h-10 w-10 rounded-full mr-4 active:scale-95 cursor-pointer">
+                <div className="relative h-14 w-14 rounded-full mr-4 active:scale-95 cursor-pointer">
                     <Image
                         src={"/memoji.webp"}
                         alt={"/"}
@@ -18,7 +19,13 @@ const Header = () => {
                         Linas Aleknevičius
                     </div>
                     <div className="font-medium text-sm text-zinc-400">
-                        Software Engineer
+                        Software Developer
+                    </div>
+                    <div className="flex flex-row gap-0.5 items-center">
+                        <MapPin size={11.5} fill="#71717a" weight="fill" />
+                        <div className="font-medium text-xs text-zinc-500">
+                            Toronto
+                        </div>
                     </div>
                 </div>
             </div>

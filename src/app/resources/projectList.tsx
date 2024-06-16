@@ -20,15 +20,15 @@ export const projects: ProjectsType = [
         desc: "Jupyter Notebook kernel that enables compiling and running P0 language programs.",
         link: "https://p0-files-bzap.vercel.app/",
     },
-    {
-        name: "ARD Util",
-        desc: "Toolkit that samples Amazon review data and recommends by keyword frequency.",
-        link: "https://github.com/bzap/ARD_Util",
-    },
+    // {
+    //     name: "ARD Util",
+    //     desc: "Toolkit that samples Amazon review data and recommends by keyword frequency.",
+    //     link: "https://github.com/bzap/ARD_Util",
+    // },
 
-    {
-        name: "Terrain Gen",
-        desc: "Three dimensional terrain generator, complete with panning and rendering options.",
-        link: "https://github.com/bzap/terrain_gen",
-    },
+    // {
+    //     name: "Terrain Gen",
+    //     desc: "Three dimensional terrain generator, complete with panning and rendering options.",
+    //     link: "https://github.com/bzap/terrain_gen",
+    // },
 ];

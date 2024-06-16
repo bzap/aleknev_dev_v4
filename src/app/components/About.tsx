@@ -1,19 +1,19 @@
+import { Smiley } from "@phosphor-icons/react/dist/ssr/Smiley";
+
 const About = () => {
     return (
         <div className="animate-slidein [--slidein-delay:150ms] opacity-0 flex flex-col w-full z-30">
             <div className="flex flex-col gap-4 text-sm text-zinc-400">
                 <div className="inline-block">
-                    Just a hardworking code writer based in
-                    <span className="text-zinc-300"> Toronto</span>. I&apos;m
-                    currently working for
-                    <a
-                        className="pl-1 text-zinc-300 hover:text-zinc-100 transition-all"
-                        href="https://aviaproconsulting.ca/"
-                        target="_blank"
-                    >
-                        AviaPro Consulting
-                    </a>
-                    !
+                    Just a curious and hardworking dev working his way through
+                    this complicated world
+                    <Smiley
+                        size={14.5}
+                        weight="fill"
+                        className="inline-block mb-0.5 ml-1"
+                    />
+                    . I focus on building thorough, accessible, and efficient
+                    experiences across all of my work.
                     <br />
                     <br />
                     {/* While I try to constantly challenge myself and take pride in
@@ -27,15 +27,31 @@ const About = () => {
                     of a machined process. I strive to achieve that.
                     <br />
                     <br /> */}
-                    When I&apos;m not working I might be managing my
-                    <span className="text-zinc-300"> fantasy basketball </span>
+                    When I&apos;m not developing, I might be managing my
+                    <a
+                        className="px-1 text-zinc-300 hover:text-zinc-100 transition-all"
+                        href="https://basketball.fantasysports.yahoo.com/"
+                        target="_blank"
+                    >
+                        fantasy basketball
+                    </a>
                     roster,
-                    <span className="text-zinc-300"> bouldering </span>
+                    <a
+                        className="px-1 text-zinc-300 hover:text-zinc-100 transition-all"
+                        href="https://www.youtube.com/watch?v=urRVZ4SW7WU"
+                        target="_blank"
+                    >
+                        bouldering
+                    </a>
                     or furthering my quest for the
-                    <span className="text-zinc-300"> endgame keyboard</span>.
-                    The endgame keyboard, in particular, I&apos;ve come to think
-                    of as a paradox by now. Ask me about the builds I have (or
-                    have had in the past)!
+                    <a
+                        className="pl-1 text-zinc-300 hover:text-zinc-100 transition-all"
+                        href="https://i.redd.it/198hy5hxq1a71.jpg"
+                        target="_blank"
+                    >
+                        endgame keyboard
+                    </a>
+                    . Ask me about my current builds (or past ones)!
                 </div>
             </div>
         </div>
