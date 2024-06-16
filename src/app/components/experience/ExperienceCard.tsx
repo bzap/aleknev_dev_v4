@@ -19,8 +19,10 @@ const ExperienceCard = ({
                 <div className="text-zinc-200 text-sm group md:hover:bg-zinc-800 active:bg-zinc-900 transition rounded-lg py-3 w-full flex justify-between items-center pl-4 pr-3">
                     <div className="flex flex-col">
                         <div className="font-bold">{workplace}</div>
-                        <div className="text-zinc-400">{title}</div>
-                        <div className="text-zinc-400 w-max bg-zinc-700 py-0.5 px-2 mt-0.5 rounded-md text-xs">
+                        <div className="text-zinc-400 text-sm -mt-0.5">
+                            {title}
+                        </div>
+                        <div className="text-zinc-400 w-max bg-zinc-700 py-0.5 px-2 mt-1 rounded-md text-xs">
                             {duration}
                         </div>
                     </div>

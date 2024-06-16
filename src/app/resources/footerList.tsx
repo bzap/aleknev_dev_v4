@@ -21,23 +21,43 @@ const iconClass: string =
 export const socials: SocialType = [
     {
         name: "Github",
-        icon: <GithubLogo size={15} className={`${iconClass}`} />,
+        icon: <GithubLogo size={14} className={`${iconClass}`} weight="bold" />,
         link: "https://github.com/bzap",
     },
     {
         name: "Instagram",
-        icon: <InstagramLogo size={15} className={`${iconClass}`} />,
+        icon: (
+            <InstagramLogo
+                size={14}
+                className={`${iconClass}`}
+                weight="bold"
+                fill="#71717a"
+            />
+        ),
         link: "https://instagram.com/l.aleknev",
     },
     {
         name: "Linkedin",
-        icon: <LinkedinLogo size={15} className={`${iconClass}`} />,
+        icon: (
+            <LinkedinLogo
+                size={14}
+                className={`${iconClass}`}
+                weight="bold"
+                fill="blue"
+            />
+        ),
         link: "https://www.linkedin.com/in/linasalekne/",
     },
 ];
 
 export const contact: ContactType = {
     name: "Contact",
-    icon: <EnvelopeSimpleOpen size={15} className={`${iconClass}`} />,
+    icon: (
+        <EnvelopeSimpleOpen
+            size={14}
+            className={`${iconClass}`}
+            weight="bold"
+        />
+    ),
     link: "mailto:linasalekne@gmail.com",
 };
