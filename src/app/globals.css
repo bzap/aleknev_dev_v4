@@ -4,10 +4,10 @@
 
 @layer base {
     .dark {
-        @apply bg-[#121212];
+        @apply bg-[#121212] selection:bg-zinc-700;
     }
     .light {
-        @apply bg-[#f4f4f5];
+        @apply bg-[#f4f4f5] selection:bg-zinc-200;
     }
 }
 
@@ -15,8 +15,4 @@
     .text-balance {
         text-wrap: balance;
     }
-}
-
-::selection {
-    background: #3f3f46;
 }
