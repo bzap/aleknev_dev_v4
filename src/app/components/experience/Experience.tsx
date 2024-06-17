@@ -12,7 +12,7 @@ const Experience = () => {
                     return (
                         <div className="flex flex-row gap-8 group">
                             <div className="mt-[15px]">
-                                <div className="w-3 h-3 bg-zinc-400 dark:bg-zinc-500 rounded-full group-hover:scale-125 transition duration-400" />
+                                <div className="w-3 h-3 bg-zinc-400 dark:bg-zinc-500 rounded-full group-hover:scale-125 transition duration-300" />
                                 {index < Object.keys(experiences).length - 1 ? (
                                     <div className="h-[110%] w-2 border-l-[4px] border-zinc-300 dark:border-zinc-700 ml-1" />
                                 ) : (
