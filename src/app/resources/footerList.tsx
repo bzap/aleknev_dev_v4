@@ -17,7 +17,7 @@ type ContactType = {
 };
 
 const iconClass: string =
-    "mr-1 group-hover:mb-1 fill-zinc-400 group-hover:fill-zinc-300 group-active:fill-zinc-500 transition-all";
+    "mr-1 group-hover:mb-1 fill-zinc-500 dark:fill-zinc-400 group-hover:fill-zinc-800 dark:group-hover:fill-zinc-300 group-active:fill-zinc-300 dark:group-active:fill-zinc-500 transition-all";
 export const socials: SocialType = [
     {
         name: "Github",
