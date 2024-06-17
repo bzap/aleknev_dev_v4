@@ -22,7 +22,11 @@ export default function RootLayout({
             <Head>
                 <meta name="description" content={metadata.description || ""} />
             </Head>
-            <body className={`${inter.className} dark`}>{children}</body>
+            <body
+                className={`${inter.className} dark transition-colors duration-200`}
+            >
+                {children}
+            </body>
         </html>
     );
 }

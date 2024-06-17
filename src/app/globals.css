@@ -10,9 +10,6 @@
         @apply bg-[#f4f4f5];
     }
 }
-/* body * {
-    @apply transition-colors duration-50;
-} */
 
 @layer utilities {
     .text-balance {
