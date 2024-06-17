@@ -4,7 +4,7 @@ import ToggleButton from "./ToggleButton";
 
 const Header = () => {
     return (
-        <div className="animate-slidein [--slidein-delay:0ms] opacity-0 flex w-full items-center border-b-zinc-200 dark:border-b-zinc-800 border-b-[1px] pb-3 flex w-full justify-between">
+        <div className="animate-slidein [--slidein-delay:0ms] opacity-0 flex h-full items-center border-b-zinc-200 dark:border-b-zinc-800 border-b-[1px] pb-3 flex w-full justify-between">
             <div className="flex flex-row items-center justify-center">
                 <div className="relative h-14 w-14 rounded-full mr-4 active:scale-95 cursor-pointer">
                     <Image

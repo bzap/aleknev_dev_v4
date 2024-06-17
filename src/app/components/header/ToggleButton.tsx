@@ -18,7 +18,7 @@ const ToggleButton = () => {
         }
     }, [isToggled]);
     return (
-        <div className="pointer transition-all slide-in">
+        <div className="pointer transition-all slide-in h-full items-center flex">
             <button onClick={() => setIsToggled((prevState) => !prevState)}>
                 {!isToggled ? (
                     <Sun size={24} weight="bold" className={iconClassName} />
