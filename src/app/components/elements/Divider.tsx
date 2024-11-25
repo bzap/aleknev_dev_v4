@@ -1,7 +1,18 @@
-const Divider = () => {
-    return (
-        <div className="h-1 rounded-xl dark:bg-zinc-800 mt-2 mb-2 bg-zinc-200" />
+import classNames from "classnames";
+
+interface DividerProps {
+    bottomMargin: boolean;
+}
+
+const Divider = ({ bottomMargin }: DividerProps) => {
+    const dividerClassname: string = classNames(
+        "h-0.5 rounded-xl dark:bg-zinc-800 mt-3 bg-zinc-200",
+        {
+            "mb-3": bottomMargin,
+        }
     );
+
+    return <div className={dividerClassname} />;
 };
-// border-b-zinc-200 dark:border-b-zinc-800 border-b-[1px]
+
 export default Divider;

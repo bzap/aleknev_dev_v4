@@ -7,17 +7,17 @@ type ProjectsType = {
 export const projects: ProjectsType = [
     {
         name: "Mrkdwn",
-        desc: "Minimalistic markdown editor website that conforms to GFM standards.",
+        desc: "GFM markdown editor website.",
         link: "https://mrkdwn.org/",
     },
     {
         name: "WPM Dog",
-        desc: "Typing test website with multiple modes, and a focus on distraction-free operation. ",
+        desc: "Barebones typing test website.",
         link: "https://wpm-dog.vercel.app/",
     },
     {
         name: "P0 JKernel",
-        desc: "Jupyter Notebook kernel that enables compiling and running P0 language programs.",
+        desc: "Jupyter Notebook kernel for P0.",
         link: "https://p0-files-bzap.vercel.app/",
     },
 ];
