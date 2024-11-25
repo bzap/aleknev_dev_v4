@@ -4,7 +4,7 @@ import { projects } from "@/app/resources/projects";
 
 const Projects = () => {
     return (
-        <SectionContainer delay={450} header="A few projects">
+        <SectionContainer delay={450} header="Projects">
             <div className="grid base:grid-cols-2 sm:grid-cols-3 gap-4 justify-center w-full">
                 {projects.map((item, index) => {
                     return (

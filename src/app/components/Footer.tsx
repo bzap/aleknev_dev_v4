@@ -7,11 +7,11 @@ const Footer = () => {
         <SectionContainer delay={600}>
             <Divider bottomMargin />
             <div className="flex flex-row justify-between">
-                <div className="flex flex-row base:gap-2 md:gap-4">
+                <div className="flex flex-row gap-4">
                     {socials.map(({ name, link, icon }) => {
                         return (
                             <a key={name} href={link} target="_blank">
-                                {icon}
+                                <div>{icon}</div>
                             </a>
                         );
                     })}

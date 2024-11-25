@@ -8,8 +8,8 @@ const About = () => {
         <SectionContainer delay={150}>
             <div className="text-xs text-zinc-500 dark:text-zinc-400 font-medium">
                 <span>
-                    Just a curious and hardworking dev making their way through
-                    a busy world. I focus on building thorough and natural
+                    Just a curious and hardworking dev making my way through a
+                    busy world. I focus on building thorough and natural
                     experiences across all of my work.
                 </span>
                 <br />

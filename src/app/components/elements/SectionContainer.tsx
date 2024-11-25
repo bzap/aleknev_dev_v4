@@ -22,7 +22,7 @@ const SectionContainer = ({ delay, children, header }: SectionProp) => {
         <div className={containerClassname}>
             {header && (
                 <>
-                    <span className="text-zinc-500 dark:text-zinc-300 text-md font-black pb-4">
+                    <span className="text-zinc-600 dark:text-zinc-300 text-md font-black pb-4">
                         {header}
                     </span>
                 </>
