@@ -1,52 +1,53 @@
-import { Smiley } from "@phosphor-icons/react/dist/ssr/Smiley";
+import React from "react";
+
+import SectionContainer from "./elements/SectionContainer";
 
 const highlightedTextClassName: string =
     "px-1 text-zinc-400 hover:text-zinc-800 active:text-zinc-300 dark:text-zinc-300 dark:hover:text-zinc-100 dark:active:text-zinc-300 transition-all";
 
 const About = () => {
     return (
-        <div className="animate-slidein [--slidein-delay:150ms] opacity-0 flex flex-col w-full z-30">
-            <div className="flex flex-col gap-4 text-sm text-zinc-500 dark:text-zinc-400">
-                <div className="inline-block">
-                    Just a curious and hardworking dev working their way through
-                    a complicated world
-                    <Smiley
-                        size={14.5}
-                        weight="fill"
-                        className="inline-block mb-0.5 ml-1"
-                    />
-                    . I focus on building thorough, accessible, and efficient
+        <SectionContainer delay={150}>
+            <div className="text-xs text-zinc-500 dark:text-zinc-400 font-medium">
+                <span>
+                    Just a curious and hardworking dev making my way through a
+                    busy world. I focus on building thorough and natural
                     experiences across all of my work.
-                    <br />
-                    <br />
-                    When I&apos;m not developing, I might be managing my
-                    <a
-                        className={highlightedTextClassName}
-                        href="https://i.imgur.com/JM6ZTAb.jpeg"
-                        target="_blank"
-                    >
-                        fantasy basketball
-                    </a>
-                    roster,
-                    <a
-                        className={highlightedTextClassName}
-                        href="https://www.youtube.com/watch?v=urRVZ4SW7WU"
-                        target="_blank"
-                    >
-                        bouldering
-                    </a>
-                    or furthering my quest for the
-                    <a
-                        className={`pl-1 ${highlightedTextClassName}`}
-                        href="https://i.imgur.com/FRyzXU5.jpeg"
-                        target="_blank"
-                    >
-                        endgame keyboard.
-                    </a>
-                    Ask me about my current builds (or past ones)!
-                </div>
+                </span>
+                <br />
+                <br />
+                <span>
+                    Outside of development, you might find me managing my
+                </span>
+                <a
+                    className={highlightedTextClassName}
+                    href="https://i.imgur.com/JM6ZTAb.jpeg"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    fantasy
+                </a>
+                <span>basketball roster,</span>
+                <a
+                    className={highlightedTextClassName}
+                    href="https://www.youtube.com/watch?v=urRVZ4SW7WU"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    bouldering
+                </a>
+                <span>or furthering my quest for the</span>
+                <a
+                    className={`pl-1 ${highlightedTextClassName}`}
+                    href="https://i.imgur.com/FRyzXU5.jpeg"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    endgame
+                </a>
+                <span>keyboard.</span>
             </div>
-        </div>
+        </SectionContainer>
     );
 };
 

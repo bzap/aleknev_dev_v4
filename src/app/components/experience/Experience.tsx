@@ -1,36 +1,43 @@
-import { experiences } from "@/app/resources/experienceList";
+import React from "react";
+
+import { experiences } from "@/app/resources/experiences";
 import ExperienceCard from "./ExperienceCard";
+import SectionContainer from "../elements/SectionContainer";
 
 const Experience = () => {
     return (
-        <div className="animate-slidein [--slidein-delay:300ms] opacity-0 w-full">
-            <div className="text-zinc-500 dark:text-zinc-200 text-md font-bold pb-2 border-b-zinc-200 dark:border-b-zinc-800 border-b-[1px] pt-4">
-                Recent experiences
-            </div>
-            <div className="pt-2 flex justify-center w-full flex-col">
-                {experiences.map((item, index) => {
-                    return (
-                        <div className="flex flex-row gap-8 group">
-                            <div className="mt-[15px]">
-                                <div className="w-3 h-3 bg-zinc-400 dark:bg-zinc-500 rounded-full group-hover:scale-125 transition duration-300" />
-                                {index < Object.keys(experiences).length - 1 ? (
-                                    <div className="h-[110%] w-2 border-l-[4px] border-zinc-300 dark:border-zinc-700 ml-1" />
-                                ) : (
-                                    <div className="h-[65%] w-2 border-l-[4px] border-dotted border-zinc-300 dark:border-zinc-700 ml-1" />
-                                )}
+        <SectionContainer delay={300} header="Experience">
+            <div className="flex justify-center w-full flex-col gap-4">
+                {experiences.map(
+                    ({ workplace, title, duration, link }, index) => {
+                        const experiencesLength =
+                            Object.keys(experiences).length - 1;
+
+                        return (
+                            <div
+                                key={workplace}
+                                className="flex flex-row base:gap-8 md:gap-10 group"
+                            >
+                                <div className="mt-[20px]">
+                                    <div className="w-3 h-3 bg-zinc-400 dark:bg-zinc-600 rounded-full group-hover:scale-125 border-2 border-zinc-400 dark:border-zinc-600 group-hover:dark:border-zinc-400 group-hover:border-zinc-300 transition" />
+                                    {index < experiencesLength ? (
+                                        <div className="h-[140%] border-l-4 border-zinc-300 dark:border-zinc-800 ml-1" />
+                                    ) : (
+                                        <div className="h-[70%] border-l-4 border-dotted border-zinc-300 dark:border-zinc-800 ml-1" />
+                                    )}
+                                </div>
+                                <ExperienceCard
+                                    workplace={workplace}
+                                    title={title}
+                                    duration={duration}
+                                    link={link}
+                                />
                             </div>
-                            <ExperienceCard
-                                key={item.workplace + index}
-                                workplace={item.workplace}
-                                title={item.title}
-                                duration={item.duration}
-                                link={item.link}
-                            />
-                        </div>
-                    );
-                })}
+                        );
+                    }
+                )}
             </div>
-        </div>
+        </SectionContainer>
     );
 };
 

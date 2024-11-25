@@ -8,7 +8,7 @@ type ExperienceType = {
 export const experiences: ExperienceType = [
     {
         workplace: "Universe (A Ticketmaster Company)",
-        title: "Incoming Software Developer",
+        title: "Software Developer",
         duration: "Jul 2024 - Present",
         link: "https://www.universe.com/",
     },
