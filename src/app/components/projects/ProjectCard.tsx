@@ -1,10 +1,10 @@
 import Arrow from "../elements/Arrow";
 
-type ProjectProp = {
+interface ProjectProp {
     name: string;
     desc: string;
     link: string;
-};
+}
 
 const ProjectCard = ({ name, desc, link }: ProjectProp) => {
     return (

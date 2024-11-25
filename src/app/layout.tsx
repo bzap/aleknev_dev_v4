@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
+import { Montserrat } from "next/font/google";
 
-import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
+
 export const metadata: Metadata = {
     title: "Linas Aleknevičius",
     description: "Personal website of Linas Aleknevičius.",
@@ -19,11 +19,8 @@ export default function RootLayout({
     return (
         <html lang="en">
             <Analytics />
-            <Head>
-                <meta name="description" content={metadata.description || ""} />
-            </Head>
             <body
-                className={`${inter.className} dark transition-colors duration-200`}
+                className={`${montserrat.className} dark transition-colors duration-200`}
             >
                 {children}
             </body>
