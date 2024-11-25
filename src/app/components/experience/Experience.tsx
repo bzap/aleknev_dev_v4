@@ -1,3 +1,5 @@
+import React from "react";
+
 import { experiences } from "@/app/resources/experiences";
 import ExperienceCard from "./ExperienceCard";
 import SectionContainer from "../elements/SectionContainer";

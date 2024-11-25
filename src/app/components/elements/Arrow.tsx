@@ -1,3 +1,5 @@
+import React from "react";
+
 import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr/ArrowUpRight";
 
 const Arrow = () => {

@@ -1,3 +1,5 @@
+import React from "react";
+
 import SectionContainer from "../elements/SectionContainer";
 import ProjectCard from "./ProjectCard";
 import { projects } from "@/app/resources/projects";

@@ -1,6 +1,7 @@
+import React from "react";
+
 import Image from "next/image";
 import { MapPin } from "@phosphor-icons/react/dist/ssr/MapPin";
-import ToggleButton from "./DarkModeButton";
 import Divider from "../elements/Divider";
 import SectionContainer from "../elements/SectionContainer";
 
@@ -9,7 +10,7 @@ const Header = () => {
         <SectionContainer delay={0}>
             <div className="flex h-full items-center border-b-zinc-200 flex w-full justify-between">
                 <div className="flex flex-row items-center justify-center">
-                    <div className="relative h-16 w-16 rounded-full mr-4 active:scale-95 cursor-pointer">
+                    <div className="relative h-8 w-8 md:h-16 md:w-16 rounded-full mr-4 active:scale-95 cursor-pointer">
                         <Image
                             src={"/memoji.webp"}
                             alt={"/"}
@@ -37,7 +38,6 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <ToggleButton />
             </div>
             <Divider />
         </SectionContainer>

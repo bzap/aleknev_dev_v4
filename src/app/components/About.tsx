@@ -1,3 +1,5 @@
+import React from "react";
+
 import SectionContainer from "./elements/SectionContainer";
 
 const highlightedTextClassName: string =
@@ -21,6 +23,7 @@ const About = () => {
                     className={highlightedTextClassName}
                     href="https://i.imgur.com/JM6ZTAb.jpeg"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     fantasy
                 </a>
@@ -29,6 +32,7 @@ const About = () => {
                     className={highlightedTextClassName}
                     href="https://www.youtube.com/watch?v=urRVZ4SW7WU"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     bouldering
                 </a>
@@ -37,6 +41,7 @@ const About = () => {
                     className={`pl-1 ${highlightedTextClassName}`}
                     href="https://i.imgur.com/FRyzXU5.jpeg"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     endgame
                 </a>

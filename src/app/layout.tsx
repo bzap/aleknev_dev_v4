@@ -1,3 +1,5 @@
+import React from "react";
+
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { Montserrat } from "next/font/google";

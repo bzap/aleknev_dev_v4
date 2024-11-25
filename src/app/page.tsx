@@ -1,7 +1,9 @@
+import React from "react";
+
 import Header from "./components/header/Header";
 import About from "./components/About";
 import Projects from "./components/projects/Projects";
-import Footer from "./components/Footer";
+import Footer from "./components/footer/Footer";
 import Experience from "./components/experience/Experience";
 
 export default function Home() {

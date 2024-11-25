@@ -1,6 +1,9 @@
-import { socials, contact } from "../resources/footers";
-import Divider from "./elements/Divider";
-import SectionContainer from "./elements/SectionContainer";
+import React from "react";
+
+import { socials } from "../../resources/footers";
+import Divider from "../elements/Divider";
+import SectionContainer from "../elements/SectionContainer";
+import DarkModeButton from "./DarkModeButton";
 
 const Footer = () => {
     return (
@@ -10,13 +13,18 @@ const Footer = () => {
                 <div className="flex flex-row gap-4">
                     {socials.map(({ name, link, icon }) => {
                         return (
-                            <a key={name} href={link} target="_blank">
+                            <a
+                                key={name}
+                                href={link}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <div>{icon}</div>
                             </a>
                         );
                     })}
                 </div>
-                <a href={contact.link}>{contact.icon}</a>
+                <DarkModeButton />
             </div>
         </SectionContainer>
     );
