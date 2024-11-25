@@ -9,7 +9,7 @@ import "./globals.css";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Linas Aleknevičius",
+    title: "Linas Aleknevičius' Website",
     description: "Personal website of Linas Aleknevičius.",
 };
 
