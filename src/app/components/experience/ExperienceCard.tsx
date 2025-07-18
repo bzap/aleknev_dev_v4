@@ -26,7 +26,7 @@ const ExperienceCard = ({
                         <span className="text-zinc-500 dark:text-zinc-400 text-[13px]">
                             {title}
                         </span>
-                        <span className="text-zinc-100 dark:text-zinc-400 w-max bg-zinc-400 dark:bg-zinc-700 px-2 py-0.5 tracking-wider mt-1 rounded-md text-[10px]">
+                        <span className="text-zinc-100 dark:text-zinc-400 w-max bg-zinc-400 dark:bg-zinc-700 px-2 py-0.5 tracking-wider mt-1.5 rounded-md text-[10px]">
                             {duration}
                         </span>
                     </div>
