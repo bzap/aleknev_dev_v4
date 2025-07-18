@@ -21,7 +21,7 @@ const ProjectCard = ({ name, desc, link }: ProjectProp) => {
                             {desc}
                         </span>
                     </div>
-                    <div className="relative bottom-6">
+                    <div className="relative bottom-unset sm:bottom-6">
                         <Arrow />
                     </div>
                 </div>
