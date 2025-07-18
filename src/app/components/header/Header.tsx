@@ -1,6 +1,5 @@
 import React from "react";
 
-import Divider from "../elements/Divider";
 import SectionContainer from "../elements/SectionContainer";
 
 const Header = () => {
@@ -8,14 +7,11 @@ const Header = () => {
         <SectionContainer delay={0}>
             <div className="flex h-full items-center border-b-zinc-200 flex w-full justify-between">
                 <div className="flex flex-row items-center justify-center">
-                    <div className="flex flex-col">
-                        <span className="text-zinc-600 font-spectral dark:text-zinc-300 text-4xl antialiased">
-                            ✦ LINAS ALEKNEVIČIUS
-                        </span>
-                    </div>
+                    <span className="text-zinc-600 font-spectral dark:text-zinc-300 text-4xl">
+                        ✦ LINAS ALEKNEVIČIUS
+                    </span>
                 </div>
             </div>
-            <Divider />
         </SectionContainer>
     );
 };

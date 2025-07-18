@@ -8,7 +8,7 @@ interface DividerProps {
 
 const Divider = ({ bottomMargin }: DividerProps) => {
     const dividerClassname: string = classNames(
-        "h-1 rounded-xl dark:bg-zinc-800 mt-4 bg-zinc-200",
+        "h-0.5 rounded-xl dark:bg-zinc-800 mt-4 bg-zinc-200",
         {
             "mb-4": bottomMargin,
         }

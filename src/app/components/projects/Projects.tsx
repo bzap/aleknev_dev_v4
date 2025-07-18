@@ -7,7 +7,7 @@ import { projects } from "@/app/resources/projects";
 const Projects = () => {
     return (
         <SectionContainer delay={450} header="PROJECTS">
-            <div className="flex flex-col sm:grid sm:grid-cols-3 gap-2 sm:gap-4 justify-center w-full">
+            <div className="flex flex-col sm:grid sm:grid-cols-3 gap-4 justify-center w-full">
                 {projects.map((item, index) => {
                     return (
                         <ProjectCard
