@@ -16,7 +16,7 @@ const Experience = () => {
                         return (
                             <div
                                 key={workplace}
-                                className="flex flex-row gap-10 group"
+                                className="flex flex-row gap-8 group"
                             >
                                 <div className="sm:block hidden mt-[36px]">
                                     <div className="w-3 h-3 bg-zinc-400  dark:bg-zinc-600 rounded-full border-zinc-400 dark:border-zinc-600 relative z-20 group-hover:dark:bg-zinc-400 group-hover:bg-zinc-500 transition" />
