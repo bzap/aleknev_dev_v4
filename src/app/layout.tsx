@@ -2,7 +2,7 @@ import React from "react";
 
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
-import { Corben, Merriweather, Playfair_Display, Rubik, Shrikhand } from "next/font/google";
+import { Corben, Shrikhand } from "next/font/google";
 
 import "./globals.css";
 
@@ -14,7 +14,7 @@ const spectral = Shrikhand({
 });
 
 export const metadata: Metadata = {
-    title: "< LA />",
+    title: "Visual Matter",
     description: "Personal website of Linas Aleknevičius.",
 };
 
