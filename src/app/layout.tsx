@@ -2,14 +2,19 @@ import React from "react";
 
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
-import { Montserrat } from "next/font/google";
+import { Corben, Shrikhand } from "next/font/google";
 
 import "./globals.css";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const montserrat = Corben({ subsets: ["latin"], weight: ['400', '700'] });
+const spectral = Shrikhand({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-spectral',
+});
 
 export const metadata: Metadata = {
-    title: "Linas Aleknevičius' Website",
+    title: "Visual Matter",
     description: "Personal website of Linas Aleknevičius.",
 };
 
@@ -22,7 +27,7 @@ export default function RootLayout({
         <html lang="en">
             <Analytics />
             <body
-                className={`${montserrat.className} dark transition-colors duration-200`}
+                className={`${montserrat.className} ${spectral.variable} dark transition-colors duration-200`}
             >
                 {children}
             </body>

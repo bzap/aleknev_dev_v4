@@ -12,30 +12,40 @@ type SocialType = {
     link: string;
 }[];
 
-const iconClass: string =
-    "fill-zinc-500 dark:fill-zinc-400 hover:fill-zinc-800 dark:hover:fill-zinc-300 hover:-mt-1 active:fill-zinc-300 dark:active:fill-zinc-500 transition-all";
+type GithubLogoProps = {
+  size: number;
+  weight?: 'bold',
+  className: string;
+}
+
+export const iconClass: string =
+    "fill-zinc-400 dark:fill-zinc-700 hover:rotate-12 hover:fill-zinc-800 dark:hover:fill-zinc-300 active:fill-zinc-300 dark:active:fill-zinc-500 transition-all";
+
+const iconProps: GithubLogoProps = {
+    size: 15,
+    className: iconClass,
+    weight: 'bold'
+};
 
 export const socials: SocialType = [
     {
         name: "Github",
-        icon: <GithubLogo size={16} className={iconClass} weight="bold" />,
+        icon: <GithubLogo {...iconProps} />,
         link: "https://github.com/bzap",
     },
     {
         name: "Instagram",
-        icon: <InstagramLogo size={16} className={iconClass} weight="bold" />,
+        icon: <InstagramLogo {...iconProps} />,
         link: "https://instagram.com/l.aleknev",
     },
     {
         name: "LinkedIn",
-        icon: <LinkedinLogo size={16} className={iconClass} weight="bold" />,
+        icon: <LinkedinLogo {...iconProps} />,
         link: "https://www.linkedin.com/in/linasalekne/",
     },
     {
         name: "Contact",
-        icon: (
-            <EnvelopeSimpleOpen size={16} className={iconClass} weight="bold" />
-        ),
+        icon: <EnvelopeSimpleOpen {...iconProps} />,
         link: "mailto:linasalekne@gmail.com",
     },
 ];

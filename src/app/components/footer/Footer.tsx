@@ -1,16 +1,17 @@
 import React from "react";
 
-import { socials } from "../../resources/footers";
 import Divider from "../elements/Divider";
 import SectionContainer from "../elements/SectionContainer";
 import DarkModeButton from "./DarkModeButton";
+
+import { socials } from "../../resources/footers";
 
 const Footer = () => {
     return (
         <SectionContainer delay={600}>
             <Divider bottomMargin />
             <div className="flex flex-row justify-between">
-                <div className="flex flex-row gap-4">
+                <div className="flex flex-row gap-2">
                     {socials.map(({ name, link, icon }) => {
                         return (
                             <a

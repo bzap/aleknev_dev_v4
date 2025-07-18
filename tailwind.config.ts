@@ -26,6 +26,9 @@ const config: Config = {
             screens: {
                 base: "0px",
             },
+            fontFamily: {
+                "spectral": "var(--font-spectral)",
+      }
         },
     },
     plugins: [],
