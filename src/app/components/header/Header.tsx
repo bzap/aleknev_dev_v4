@@ -1,7 +1,5 @@
 import React from "react";
 
-import Image from "next/image";
-import { MapPin } from "@phosphor-icons/react/dist/ssr/MapPin";
 import Divider from "../elements/Divider";
 import SectionContainer from "../elements/SectionContainer";
 
@@ -12,7 +10,7 @@ const Header = () => {
                 <div className="flex flex-row items-center justify-center">
                     <div className="flex flex-col">
                         <span className="text-zinc-600 font-spectral dark:text-zinc-300 text-4xl antialiased">
-                            ✦ LINAS ALEKNEVICIUS
+                            ✦ LINAS ALEKNEVIČIUS
                         </span>
                     </div>
                 </div>
