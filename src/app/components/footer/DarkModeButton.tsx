@@ -6,11 +6,10 @@ import { MoonStars } from "@phosphor-icons/react/dist/ssr/MoonStars";
 import { Sun } from "@phosphor-icons/react/dist/ssr/Sun";
 import { useEffect, useState } from "react";
 
+import { iconClass } from "@/app/resources/footers";
+
 const DarkModeButton = () => {
     const [isToggled, setIsToggled] = useState<boolean>(false);
-
-    const iconClassName: string =
-        "fill-zinc-500 dark:fill-zinc-400 hover:fill-zinc-800 dark:hover:fill-zinc-300 dark:hover:rotate-45 hover:rotate-12 active:fill-zinc-300 dark:active:fill-zinc-500 transition-all";
 
     useEffect(() => {
         if (isToggled) {
@@ -27,12 +26,12 @@ const DarkModeButton = () => {
             <button onClick={() => setIsToggled((prevState) => !prevState)}>
                 {isToggled ? (
                     <MoonStars
-                        size={18}
+                        size={16}
                         weight="bold"
-                        className={iconClassName}
+                        className={iconClass}
                     />
                 ) : (
-                    <Sun size={18} weight="bold" className={iconClassName} />
+                    <Sun size={16} weight="bold" className={iconClass} />
                 )}
             </button>
         </div>
