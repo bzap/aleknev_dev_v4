@@ -16,34 +16,36 @@ const About = () => {
                 <br />
                 <p>Always thankful for past experiences, always grateful for new opportunities.</p>
                 <br />
-                <p>Outside of development, you might find me managing my</p>
-                <a
-                    className={highlightedTextClassName}
-                    href="https://i.imgur.com/JM6ZTAb.jpeg"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    fantasy
-                </a>
-                <span>basketball roster,</span>
-                <a
-                    className={highlightedTextClassName}
-                    href="https://www.youtube.com/watch?v=urRVZ4SW7WU"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    bouldering
-                </a>
-                <span>or furthering my quest for the</span>
-                <a
-                    className={`pl-1 ${highlightedTextClassName}`}
-                    href="https://i.imgur.com/FRyzXU5.jpeg"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    endgame
-                </a>
-                <span>keyboard.</span>
+                <p>
+                    Outside of development, you might find me managing
+                    <a
+                        className={highlightedTextClassName}
+                        href="https://i.imgur.com/JM6ZTAb.jpeg"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        fantasy
+                    </a>
+                    basketball roster,
+                    <a
+                        className={highlightedTextClassName}
+                        href="https://www.youtube.com/watch?v=urRVZ4SW7WU"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        bouldering
+                    </a>
+                    or furthering my quest for the
+                    <a
+                        className={`pl-1 ${highlightedTextClassName}`}
+                        href="https://i.imgur.com/FRyzXU5.jpeg"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        endgame
+                    </a>
+                    keyboard.
+                </p>
             </div>
         </SectionContainer>
     );
