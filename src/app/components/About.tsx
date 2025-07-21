@@ -9,16 +9,14 @@ const About = () => {
     return (
         <SectionContainer delay={150}>
             <div className="text-[13px] text-zinc-500 dark:text-zinc-400">
-                <span>
-                    In a world that never stops evolving — I keep moving forward.
-                    I’m a developer shaped by that motion, driven to keep learning and improving.
-                    Always thankful for past experiences, always grateful for new opportunities.
-                </span>
+                <p>
+                    In a world that never stops evolving — I try to keep moving forward.
+                    I’m a developer shaped by that motion, driven to continue learning and improving.
+                </p>
                 <br />
+                <p>Always thankful for past experiences, always grateful for new opportunities.</p>
                 <br />
-                <span>
-                    Outside of development, you might find me managing my
-                </span>
+                <p>Outside of development, you might find me managing my</p>
                 <a
                     className={highlightedTextClassName}
                     href="https://i.imgur.com/JM6ZTAb.jpeg"
