@@ -10,7 +10,7 @@ interface SectionProp {
 
 const SectionContainer = ({ delay, children, header }: SectionProp) => {
     const containerClassname: string = classNames(
-        "animate-slidein opacity-0 flex flex-col w-full z-30 pb-2",
+        "animate-slidein opacity-0 flex flex-col w-full z-30",
         {
             "[--slidein-delay:0ms]": delay === 0,
             "[--slidein-delay:150ms]": delay === 150,
@@ -23,11 +23,9 @@ const SectionContainer = ({ delay, children, header }: SectionProp) => {
     return (
         <div className={containerClassname}>
             {header && (
-                <>
-                    <span className="text-zinc-600 dark:text-zinc-300 text-lg font-spectral tracking-wider pb-4">
-                        {header}
-                    </span>
-                </>
+                <span className="text-zinc-600 dark:text-zinc-300 text-lg font-spectral tracking-wider pb-4">
+                    {header}
+                </span>
             )}
             <div>{children}</div>
         </div>

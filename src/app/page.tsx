@@ -9,7 +9,7 @@ import Experience from "./components/experience/Experience";
 export default function Home() {
     return (
         <main className="flex min-h-screen flex-col min-w-screen items-center justify-between">
-            <div className="w-full min-h-screen px-8 base:py-6 md:py-10 max-w-2xl gap-4 flex flex-col">
+            <div className="w-full min-h-screen px-8 base:py-6 md:py-12 max-w-2xl gap-8 flex flex-col">
                 <Header />
                 <About />
                 <Experience />

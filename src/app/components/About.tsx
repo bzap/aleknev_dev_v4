@@ -8,16 +8,13 @@ const highlightedTextClassName: string =
 const About = () => {
     return (
         <SectionContainer delay={150}>
-            <div className="text-[13px] text-zinc-500 dark:text-zinc-400">
+            <div className="text-[13px] text-zinc-500 dark:text-zinc-400 flex flex-col gap-2 -mt-4">
                 <p>
-                    In a world that never stops evolving — I try to keep moving forward.
-                    I’m a developer shaped by that motion, driven to continue learning and improving.
+                    Always thankful for past experiences, always grateful for
+                    new opportunities.
                 </p>
-                <br />
-                <p>Always thankful for past experiences, always grateful for new opportunities.</p>
-                <br />
                 <p>
-                    Outside of development, you might find me managing
+                    Outside of development you might find me managing
                     <a
                         className={highlightedTextClassName}
                         href="https://i.imgur.com/JM6ZTAb.jpeg"
