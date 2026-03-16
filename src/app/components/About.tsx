@@ -14,7 +14,7 @@ const About = () => {
                     new opportunities.
                 </p>
                 <p>
-                    Outside of development you might find me managing
+                    Outside of development you might find me managing my
                     <a
                         className={highlightedTextClassName}
                         href="https://i.imgur.com/JM6ZTAb.jpeg"
